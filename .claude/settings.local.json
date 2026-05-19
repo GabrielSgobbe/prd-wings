@@ -1,0 +1,29 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(awk -F\"'\" '{print $2}')",
+      "Bash(sort -k5 -h)",
+      "Bash(file /Users/gabrielsgobbe/prd_wings/public/products/*.png)",
+      "WebFetch(domain:store.creality.com)",
+      "WebFetch(domain:us.store.bambulab.com)",
+      "WebFetch(domain:bambulab.com)",
+      "WebSearch",
+      "WebFetch(domain:www.matterhackers.com)",
+      "Bash(curl -sLo test-h2d.jpg \"https://img.matterhackers.com/g/Z3M6Ly9taC1wcm9kdWN0LWltYWdlcy9wcm9kLzQ1ZmZlMjFlLWNlZDQtNDk5Mi1iNDZhLTkxMzMyYWE2YjY3Ng=w900-h675-c-e365\")",
+      "Bash(curl -sLo test-h2d-2.jpg \"https://img.matterhackers.com/g/Z3M6Ly9taC1wcm9kdWN0LWltYWdlcy9wcm9kLzEwNjNlMzdlLWIwOWUtNDE4Yy1hOTcyLWE0MzBjZDJkOTJhYg=w900-h675-c-e365\")",
+      "Bash(file test-h2d*.jpg)",
+      "Bash(find /tmp /var/folders -type f \\\\\\( -name \"*.png\" -o -name \"*.jpg\" -o -name \"*.jpeg\" -o -name \"*.webp\" \\\\\\) -newer /Users/gabrielsgobbe/prd_wings/public/products/bambu-h2d.png 2>/dev/null | head -20)",
+      "Bash(ls -la \"/Users/gabrielsgobbe/Documents/\" 2>/dev/null | grep -i img && echo \"---\" && find \"/Users/gabrielsgobbe/Documents\" -type d -iname \"*IMG_PRODUTOS*\" 2>/dev/null)",
+      "Bash(sips -s format png \"/Users/gabrielsgobbe/Documents/IMG_PRODUTOS_CATALAGO_WINGS/bambulab_X1C.webp\" --out \"/Users/gabrielsgobbe/prd_wings/public/products/bambu-x1c.png\")",
+      "Bash(sips -s format png \"/Users/gabrielsgobbe/Documents/IMG_PRODUTOS_CATALAGO_WINGS/bambulab_ams_upgrade.webp\" --out \"/Users/gabrielsgobbe/prd_wings/public/products/ams-upgrades.png\")",
+      "Bash(sips -s format png \"/Users/gabrielsgobbe/Documents/IMG_PRODUTOS_CATALAGO_WINGS/Filamentos.webp\" --out \"/Users/gabrielsgobbe/prd_wings/public/products/filamentos.png\")",
+      "Bash(sips -s format png \"/Users/gabrielsgobbe/Documents/IMG_PRODUTOS_CATALAGO_WINGS/bambulab _h2s.webp\" --out \"/Users/gabrielsgobbe/prd_wings/public/products/bambu-h2s.png\")",
+      "Bash(python3 -c \"from PIL import Image; print\\('PIL ok'\\)\")",
+      "Bash(pip3 install *)",
+      "Bash(curl -sLo /Users/gabrielsgobbe/prd_wings/public/products/bambu-h2d.png \"https://img.matterhackers.com/g/Z3M6Ly9taC1wcm9kdWN0LWltYWdlcy9wcm9kLzEwNjNlMzdlLWIwOWUtNDE4Yy1hOTcyLWE0MzBjZDJkOTJhYg=w900-h675-c-e365\")",
+      "Bash(gh auth *)",
+      "Bash(git init *)",
+      "Bash(git add *)"
+    ]
+  }
+}
