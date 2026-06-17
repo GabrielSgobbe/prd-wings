@@ -64,6 +64,7 @@ button {
   border: 1px solid rgba(219, 232, 244, 0.9);
   border-radius: 20px;
   background: rgba(255, 255, 255, 0.88);
+  -webkit-backdrop-filter: blur(18px);
   backdrop-filter: blur(18px);
   box-shadow: 0 12px 38px rgba(21, 76, 125, 0.1);
 }
@@ -631,8 +632,14 @@ h3 {
     grid-template-columns: 1fr;
   }
 
+  .inspiration-feature {
+    grid-template-rows: auto auto;
+  }
+
   .inspiration-feature img {
-    min-height: 270px;
+    height: auto;
+    min-height: auto;
+    aspect-ratio: 16 / 10;
   }
 
   .inspiration-card {
@@ -640,6 +647,7 @@ h3 {
   }
 
   .inspiration-card img {
+    height: auto;
     aspect-ratio: 16 / 9;
     min-height: auto;
   }
