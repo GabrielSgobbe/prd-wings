@@ -38,3 +38,6 @@ logs
 
 # Claude Code local config
 .claude/
+
+# OMC local state
+.omc/
